@@ -41,11 +41,9 @@ public class Creature
     public boolean isAlive()
     {
         if ( hp > 0){
-            System.out.println("This creature is alive.");
             return true;
         }
         else{
-            System.out.println("This creature is dead.");
             return false;
         }
     }
