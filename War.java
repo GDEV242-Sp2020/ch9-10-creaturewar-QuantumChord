@@ -91,7 +91,7 @@ public class War
                     Collections.shuffle(army2);
                     if (army1.size() > 0 && army2.size() > 0){
                         army2.get(0).takeDamage(army1.get(0).damage());
-                        if (army2.get(0).isAlive())
+                        if (!army2.get(0).isAlive())
                         {
                             army2.remove(0);
                         }
@@ -108,7 +108,7 @@ public class War
                     Collections.shuffle(army2);
                     if (army2.size() > 0 && army1.size() > 0){
                         army1.get(0).takeDamage(army2.get(0).damage());
-                        if (army1.get(0).isAlive())
+                        if (!army1.get(0).isAlive())
                         {
                             army1.remove(0);
                         }
